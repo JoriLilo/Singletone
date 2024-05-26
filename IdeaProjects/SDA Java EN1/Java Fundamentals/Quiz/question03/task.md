@@ -1,0 +1,1 @@
+Which data type is used to store text in Java?

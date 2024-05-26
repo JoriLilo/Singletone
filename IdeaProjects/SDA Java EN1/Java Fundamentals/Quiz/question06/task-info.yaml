@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: getLenght()
+    is_correct: false
+  - text: len()
+    is_correct: false
+  - text: getSize()
+    is_correct: false
+  - text: legnth()
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+      
+          }
+      }
+    learner_created: false
+status: Unchecked
+record: -1
+local_check: true

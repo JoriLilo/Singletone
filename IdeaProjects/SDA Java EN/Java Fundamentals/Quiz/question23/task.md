@@ -1,0 +1,1 @@
+What size in bytes is the variable type `char`?

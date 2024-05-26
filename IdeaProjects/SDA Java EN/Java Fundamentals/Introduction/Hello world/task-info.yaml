@@ -1,0 +1,16 @@
+type: theory
+files:
+  - name: src/Main.java
+    visible: true
+    text: |
+      public class Main {
+          public static void main(String[] args) {
+              System.out.println("Run me!");
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  time: "Sun, 22 Oct 2023 11:29:36 UTC"
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,1 @@
+What does enum do in Java?

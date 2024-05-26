@@ -1,0 +1,1 @@
+What type of variable is the best to store the result of `1000 * 2500000`?

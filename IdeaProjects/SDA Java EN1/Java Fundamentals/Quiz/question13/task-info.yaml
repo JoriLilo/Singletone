@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: String text = ‘Incorrect value’;
+    is_correct: false
+  - text: "double price = 103,12;"
+    is_correct: false
+  - text: long number = 1_000_000;
+    is_correct: true
+  - text: char out = “x”;
+    is_correct: false
+  - text: char description = ‘A camera’;
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+      
+          }
+      }
+    learner_created: false
+status: Unchecked
+record: -1
+local_check: true

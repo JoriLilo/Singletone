@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: 1 byte
+    is_correct: false
+  - text: 2 bytes
+    is_correct: true
+  - text: 4 bytes
+    is_correct: false
+  - text: 8 bytes
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+      
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 22 Oct 2023 11:43:43 UTC"
+record: -1
+selected_options:
+  - 1
+local_check: true

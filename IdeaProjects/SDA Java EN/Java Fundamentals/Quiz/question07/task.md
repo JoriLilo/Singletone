@@ -1,0 +1,1 @@
+String value can be placed between single quotation marks:

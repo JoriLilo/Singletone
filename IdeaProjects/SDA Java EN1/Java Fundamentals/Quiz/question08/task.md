@@ -1,0 +1,1 @@
+Which method is used to convert letters in text to uppercase?

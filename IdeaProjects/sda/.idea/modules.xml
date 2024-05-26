@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LOOPS/LOOPS.iml" filepath="$PROJECT_DIR$/LOOPS/LOOPS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/leksionm3/dt sht/dt sht.iml" filepath="$PROJECT_DIR$/out/leksionm3/dt sht/dt sht.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dt2/dt2.iml" filepath="$PROJECT_DIR$/dt2/dt2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/leksionm3/lekesion4/lekesion4.iml" filepath="$PROJECT_DIR$/out/leksionm3/lekesion4/lekesion4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/leksionm3/dt sht/leksion5/leksion5.iml" filepath="$PROJECT_DIR$/out/leksionm3/dt sht/leksion5/leksion5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/leksionm3/leksionm3.iml" filepath="$PROJECT_DIR$/out/leksionm3/leksionm3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sda.iml" filepath="$PROJECT_DIR$/sda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ush 17/ush 17.iml" filepath="$PROJECT_DIR$/ush 17/ush 17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ush18/ush18.iml" filepath="$PROJECT_DIR$/ush18/ush18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ush2/ush2.iml" filepath="$PROJECT_DIR$/ush2/ush2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ush4/ush4.iml" filepath="$PROJECT_DIR$/ush4/ush4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ushh/ushh.iml" filepath="$PROJECT_DIR$/ushh/ushh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ushtrim1/ushtrim1.iml" filepath="$PROJECT_DIR$/ushtrim1/ushtrim1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/ushtrime/ushtrime.iml" filepath="$PROJECT_DIR$/out/ushtrime/ushtrime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ushtrimmm/ushtrimmm.iml" filepath="$PROJECT_DIR$/ushtrimmm/ushtrimmm.iml" />
+    </modules>
+  </component>
+</project>

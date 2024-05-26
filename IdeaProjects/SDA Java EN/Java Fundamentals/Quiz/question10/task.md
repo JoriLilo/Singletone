@@ -1,0 +1,1 @@
+How do you create an object called myObj of type MyClass?

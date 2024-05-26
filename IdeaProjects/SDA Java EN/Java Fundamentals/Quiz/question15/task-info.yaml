@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: To define the set of startup parameters entered by the user when starting
+      the program from the command line.
+    is_correct: false
+  - text: To define a function that is able to call itself.
+    is_correct: false
+  - text: To define the set of possible values. These values can be modified while the
+      program is running.
+    is_correct: false
+  - text: To define the set of possible values. These values cannot be modified while
+      the program is running.
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+      
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 22 Oct 2023 11:38:09 UTC"
+record: -1
+selected_options:
+  - 3
+local_check: true

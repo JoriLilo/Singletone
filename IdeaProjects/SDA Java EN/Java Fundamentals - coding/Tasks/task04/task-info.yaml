@@ -1,0 +1,127 @@
+type: edu
+files:
+  - name: src/Task.java
+    visible: true
+    placeholders:
+      - offset: 143
+        length: 349
+        placeholder_text: // type here
+        initial_state:
+          length: 12
+          offset: 143
+        initialized_from_dependency: false
+        selected: true
+        status: Solved
+        encrypted_possible_answer: |2-
+                  int amoutOfJam = scanner.nextInt();
+        
+                  // Let's calculate how many big jars we need - if it is possible, we prefer to buy only big jars.
+                  // Division / of integer values in Java "cuts" non-integer part of result.
+                  // For example:
+                  // 10 / 7 = 1
+                  // 5 / 7 = 0
+                  // 21 / 7 = 3
+                  int amountOf7kgJars = amoutOfJam / 7;
+        
+                  // To know how many jam is missing, we need a remainder of division above.
+                  // Remainder may be calculated using modulo (%) operator.
+                  // For example:
+                  // 10 % 7 = 3
+                  // 5 % 7 = 5
+                  // 21 % 7 = 0
+                  int amountOf1kgJars = amoutOfJam % 7;
+        
+                  // Now we have to check if overall amount of jars is less or equal to 6.
+                  // We'll print "true" if it is <= 6 or "false" otherwise.
+                  System.out.println(amountOf1kgJars + amountOf7kgJars <= 6);
+    text: |-
+      import java.util.Scanner;
+      
+      public class Task {
+          public static void main(String[] args) {
+              Scanner scanner = new Scanner(System.in);
+      
+      // type here
+          }
+      }
+    learner_created: false
+  - name: test/BaseTest.java
+    visible: false
+    text: |
+      import org.junit.After;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.PrintStream;
+      import java.util.function.Consumer;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class BaseTest {
+      
+          @After
+          public void restoreStreams() {
+              System.setOut(System.out);
+              System.setIn(System.in);
+          }
+      
+          protected void runTest(String input, String expected) {
+              String actual = run(Task::main, input);
+      
+              assertEquals("Wrong answer for following input: \n" + input + "\n", expected, actual);
+          }
+      
+          private String run(Consumer<String[]> method, String input) {
+              System.setIn(new ByteArrayInputStream(input.getBytes()));
+      
+              ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+              System.setOut(new PrintStream(outContent));
+      
+              method.accept(new String[]{});
+              return outContent.toString().trim();
+          }
+      }
+    learner_created: false
+  - name: test/Tests.java
+    visible: false
+    text: |-
+      import org.junit.Test;
+      
+      public class Tests extends BaseTest {
+      
+          @Test
+          public void testSolution() {
+              runTest("6", "true");
+          }
+      
+          @Test
+          public void testSolution2() {
+              runTest("7", "true");
+          }
+      
+          @Test
+          public void testSolution3() {
+              runTest("13", "false");
+          }
+      
+          @Test
+          public void testSolution4() {
+              runTest("14", "true");
+          }
+      
+          @Test
+          public void testSolution5() {
+              runTest("20", "false");
+          }
+      
+          @Test
+          public void testSolution6() {
+              runTest("43", "false");
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 22 Oct 2023 11:58:27 UTC"
+record: -1

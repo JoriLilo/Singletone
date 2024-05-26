@@ -1,0 +1,126 @@
+type: edu
+files:
+  - name: src/Task.java
+    visible: true
+    placeholders:
+      - offset: 143
+        length: 436
+        placeholder_text: // type here
+        initial_state:
+          length: 12
+          offset: 143
+        initialized_from_dependency: false
+        selected: true
+        status: Solved
+        encrypted_possible_answer: |2-
+                  int arr[][] = new int[2][5];
+        
+                  // read numbers given by user to two-dimensional array
+                  for (int i = 0; i < 2; i++) {
+                      for (int j = 0; j < 5; j++) {
+                          arr[i][j] = scanner.nextInt();
+                      }
+                  }
+        
+                  // numbers in array arr[0] is first five-element set
+                  // numbers in array arr[1] is second five-element set
+                  for (int i = 0; i < 5; i++) {
+                      int numberToFind = arr[0][i];
+                      for (int j = 0; j < 5; j++) {
+                          if (arr[1][j] == numberToFind) {
+                              System.out.println(numberToFind);
+                              break; // as we already found it, there's no reason to go on with this loop
+                          }
+                      }
+                  }
+    text: |-
+      import java.util.Scanner;
+      
+      public class Task {
+          public static void main(String[] args) {
+              Scanner scanner = new Scanner(System.in);
+      
+      // type here
+          }
+      }
+    learner_created: false
+  - name: test/BaseTest.java
+    visible: false
+    text: |
+      import org.junit.After;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.PrintStream;
+      import java.util.function.Consumer;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class BaseTest {
+      
+          @After
+          public void restoreStreams() {
+              System.setOut(System.out);
+              System.setIn(System.in);
+          }
+      
+          protected void runTest(String input, String expected) {
+              String actual = run(Task::main, input);
+      
+              assertEquals("Wrong answer for following input: \n" + input + "\n", expected, actual);
+          }
+      
+          private String run(Consumer<String[]> method, String input) {
+              System.setIn(new ByteArrayInputStream(input.getBytes()));
+      
+              ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+              System.setOut(new PrintStream(outContent));
+      
+              method.accept(new String[]{});
+              return outContent.toString().trim().replaceAll("\r\n", "\n");
+          }
+      }
+    learner_created: false
+  - name: test/Tests.java
+    visible: false
+    text: |-
+      import org.junit.Test;
+      
+      import java.util.Arrays;
+      import java.util.stream.Collectors;
+      
+      public class Tests extends BaseTest {
+      
+          private String printAsString(int... ints) {
+              return Arrays.stream(ints)
+                      .mapToObj(String::valueOf)
+                      .collect(Collectors.joining("\n"));
+          }
+      
+          @Test
+          public void testSolution() {
+              runTest(printAsString(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), "");
+          }
+      
+          @Test
+          public void testSolution2() {
+              runTest(printAsString(1, 2, 3, 4, 5, 1, 2, 3, 4, 5), "1\n2\n3\n4\n5");
+          }
+      
+          @Test
+          public void testSolution3() {
+              runTest(printAsString(1, 2, 3, 4, 5, 5, 4, 3, 2, 1), "1\n2\n3\n4\n5");
+          }
+      
+          @Test
+          public void testSolution4() {
+              runTest(printAsString(1, 2, 3, 4, 5, 8, 11, 2, 5, 9), "2\n5");
+          }
+      
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 23 Oct 2023 05:36:07 UTC"
+record: -1

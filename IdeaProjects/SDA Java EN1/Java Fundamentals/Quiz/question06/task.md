@@ -1,0 +1,1 @@
+Which method is used to check the length of text in the class `String`?

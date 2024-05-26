@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Replace System.out.println with System.out.printf in line 4.
+    is_correct: false
+  - text: Delete the word static from line 2.
+    is_correct: false
+  - text: Replace i ++ with ++ and on line 3.
+    is_correct: false
+  - text: Put line 4 in braces.
+    is_correct: false
+  - text: Replace System.out.println with System.out.print in line 4.
+    is_correct: false
+  - text: Add int before i = 0 on line 3.
+    is_correct: true
+  - text: Add a semicolon at the end of line 3.
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+      
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 22 Oct 2023 11:40:39 UTC"
+record: -1
+selected_options:
+  - 5
+local_check: true

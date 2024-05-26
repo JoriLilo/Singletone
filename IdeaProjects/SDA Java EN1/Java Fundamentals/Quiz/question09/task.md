@@ -1,0 +1,1 @@
+To declare an array in Java, add to the variable type:

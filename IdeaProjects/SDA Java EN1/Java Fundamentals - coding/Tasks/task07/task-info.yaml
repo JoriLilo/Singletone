@@ -1,0 +1,144 @@
+type: edu
+files:
+  - name: src/Task.java
+    visible: true
+    placeholders:
+      - offset: 151
+        length: 12
+        placeholder_text: // type here
+        initial_state:
+          length: 12
+          offset: 151
+        initialized_from_dependency: false
+        selected: false
+        status: Unchecked
+        encrypted_possible_answer: |-
+          int x = scanner.nextInt();
+                  int y = scanner.nextInt();
+          
+                  // if any of requirements is not met - exit application
+                  if (x > y || x < 0 || y > 10_000) {
+                      return;
+                  }
+          
+                  int firstNumberDivisibleBySeven;     // the smallest number bigger or equal x and divisible by 7
+                  if (x % 7 == 0) {
+                      // number is divisible by 7, so we can start with it
+                      firstNumberDivisibleBySeven = x;
+                  } else {
+                      // we have to calculate a little bigger number than x
+                      // so we add a little to 'x' just to make it divisible by 7
+                      firstNumberDivisibleBySeven = x + (7 - x % 7);
+                  }
+          
+                  // let's start with the number we found and increase it by 7 in every loop
+                  for (int i = firstNumberDivisibleBySeven; i <= y; i += 7) {
+                      System.out.println(i);
+                  }
+          
+                  ////////////////////////////////////////////////
+                  // Alternatively, another solution is:
+                  if (x > y || x < 0 || y > 10_000) {
+                      return;
+                  }
+                  for (int i = x; i <= y; i++) {
+                      if (i % 7 == 0) {
+          //                System.out.println(i);
+                      }
+                  }
+                  // It is worse solution without any doubts, because it's more computationally expensive.
+                  // We make around y-x loops and check condition (if) in each of them.
+                  // In first solution, there's 7 times less loops (because i+=7 instead of i++) and no condition to check.
+    text: |-
+      import java.util.Scanner;
+      
+      public class Task {
+          public static void main(String[] args) {
+              Scanner scanner = new Scanner(System.in);
+      
+              // type here
+          }
+      }
+    learner_created: false
+  - name: test/BaseTest.java
+    visible: false
+    text: |
+      import org.junit.After;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.PrintStream;
+      import java.util.function.Consumer;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class BaseTest {
+      
+          @After
+          public void restoreStreams() {
+              System.setOut(System.out);
+              System.setIn(System.in);
+          }
+      
+          protected void runTest(String input, String expected) {
+              String actual = run(Task::main, input);
+      
+              assertEquals("Wrong answer for following input: \n" + input + "\n", expected, actual);
+          }
+      
+          private String run(Consumer<String[]> method, String input) {
+              System.setIn(new ByteArrayInputStream(input.getBytes()));
+      
+              ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+              System.setOut(new PrintStream(outContent));
+      
+              method.accept(new String[]{});
+              return outContent.toString().trim().replaceAll("\r\n", "\n");
+          }
+      }
+    learner_created: false
+  - name: test/Tests.java
+    visible: false
+    text: |-
+      import org.junit.Test;
+      
+      public class Tests extends BaseTest {
+      
+          @Test
+          public void testSolution() {
+              runTest("-1\n120", "");
+          }
+      
+          @Test
+          public void testSolution2() {
+              runTest("0\n10001", "");
+          }
+      
+          @Test
+          public void testSolution3() {
+              runTest("14\n21", "14\n21");
+          }
+      
+          @Test
+          public void testSolution4() {
+              runTest("14\n14", "14");
+          }
+      
+          @Test
+          public void testSolution5() {
+              runTest("13\n34", "14\n21\n28");
+          }
+      
+          @Test
+          public void testSolution6() {
+              runTest("14\n36", "14\n21\n28\n35");
+          }
+      
+          @Test
+          public void testSolution7() {
+              runTest("32\n33", "");
+          }
+      }
+    learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-10-22T12:19:11" hostname="Joris-MacBook-Air.local" time="0.019">
+  <properties/>
+  <testcase name="testSolution" classname="Tests" time="0.015"/>
+  <testcase name="testSolution2" classname="Tests" time="0.002"/>
+  <testcase name="testSolution3" classname="Tests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

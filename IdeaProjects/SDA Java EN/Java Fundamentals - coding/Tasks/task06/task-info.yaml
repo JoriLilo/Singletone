@@ -1,0 +1,85 @@
+type: edu
+files:
+  - name: src/Task.java
+    visible: true
+    placeholders:
+      - offset: 73
+        length: 72
+        placeholder_text: // type here
+        initial_state:
+          length: 12
+          offset: 73
+        initialized_from_dependency: false
+        selected: false
+        status: Solved
+        encrypted_possible_answer: |-
+          // you cold also make a regular 'for' loop with classic "int i = 0" index.
+                  // According to ASCII table, consecutive letters of the alphabet are just next to each other,
+                  // starting with 'A' with value of 65 till 'Z' with value of 90.
+                  // This is a real number being held in variable 'i'. You could check it using debugger.
+                  for (char i = 'A'; i <= 'Z'; i++) {
+                      System.out.println(i);
+                  }
+    text: |-
+      public class Task {
+          public static void main(String[] args) {
+              // type here
+          }
+      }
+    learner_created: false
+  - name: test/BaseTest.java
+    visible: false
+    text: |
+      import org.junit.After;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.PrintStream;
+      import java.util.function.Consumer;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class BaseTest {
+      
+          @After
+          public void restoreStreams() {
+              System.setOut(System.out);
+              System.setIn(System.in);
+          }
+      
+          protected void runTest(String input, String expected) {
+              String actual = run(Task::main, input);
+      
+              assertEquals("Wrong answer for following input: \n" + input + "\n", expected, actual);
+          }
+      
+          private String run(Consumer<String[]> method, String input) {
+              System.setIn(new ByteArrayInputStream(input.getBytes()));
+      
+              ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+              System.setOut(new PrintStream(outContent));
+      
+              method.accept(new String[]{});
+              return outContent.toString().trim().replaceAll("\r\n", "\n");
+          }
+      }
+    learner_created: false
+  - name: test/Tests.java
+    visible: false
+    text: |-
+      import org.junit.Test;
+      
+      public class Tests extends BaseTest {
+      
+          @Test
+          public void testSolution() {
+              runTest("", "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ");
+          }
+      
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 22 Oct 2023 12:03:04 UTC"
+record: -1

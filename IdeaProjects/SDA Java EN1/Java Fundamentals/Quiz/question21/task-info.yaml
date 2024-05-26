@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Runtime Error.
+    is_correct: false
+  - text: 11125
+    is_correct: false
+  - text: 675
+    is_correct: true
+  - text: 111213
+    is_correct: false
+  - text: Compilation Error.
+    is_correct: false
+  - text: 678
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+      
+          }
+      }
+    learner_created: false
+status: Unchecked
+record: -1
+local_check: true

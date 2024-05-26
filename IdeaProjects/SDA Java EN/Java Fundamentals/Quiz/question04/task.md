@@ -1,0 +1,1 @@
+How do you create an integer value of 5 in Java?

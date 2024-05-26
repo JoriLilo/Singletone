@@ -1,0 +1,1 @@
+Which of the following variables is initialized correctly?

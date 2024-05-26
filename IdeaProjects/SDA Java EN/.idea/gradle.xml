@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task01" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task02" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task03" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task04" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task05" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task06" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task07" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task08" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task09" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task10" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task11" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task12" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task13" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task14" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task15" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task16" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task17" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task18" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task19" />
+            <option value="$PROJECT_DIR$/Java Fundamentals - coding/Tasks/task20" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Introduction/First quiz" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Introduction/First task" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Introduction/Hello world" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question01" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question02" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question03" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question04" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question05" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question06" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question07" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question08" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question09" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question10" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question11" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question12" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question13" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question14" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question15" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question16" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question17" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question18" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question19" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question20" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question21" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question22" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question23" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Quiz/question24" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task01" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task02" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task03" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task04" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task05" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task06" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task07" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task08" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task09" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task10" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task11" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task12" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task13" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task14" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task15" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task16" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task17" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task18" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task19" />
+            <option value="$PROJECT_DIR$/Java Fundamentals/Tasks/task20" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
